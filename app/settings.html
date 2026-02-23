@@ -35,29 +35,7 @@
     </form>
   </main>
 
-  <script src="app.js" type="module"></script>
-  <script type="module">
-    import { MandarinApp } from './app.js';
+<script type="module" src="./app.js"></script>
 
-    const form = document.getElementById('settings-form');
-    const statusEl = document.getElementById('settings-status');
-
-    MandarinApp.ready(async () => {
-      const settings = await MandarinApp.getSettings();
-      form.theme.value = settings.theme || 'light';
-      form.toneColors.value = (settings.toneColors || []).join(',');
-    });
-
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      const data = new FormData(form);
-      await MandarinApp.saveSettings({
-        theme: data.get('theme'),
-        toneColors: (data.get('toneColors') || '').split(',').map(c => c.trim()).filter(Boolean)
-      });
-      statusEl.textContent = 'Settings saved.';
-      setTimeout(() => (statusEl.textContent = ''), 2500);
-    });
-  </script>
 </body>
 </html>

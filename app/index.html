@@ -44,23 +44,7 @@
     <small>Mandarin Flashcards • Offline-first PWA</small>
   </footer>
 
-  <script src="app.js" type="module"></script>
-  <script type="module">
-    import { MandarinApp } from './app.js';
+<script type="module" src="./app.js"></script>
 
-    const dueCountEl = document.getElementById('due-count');
-    const totalCountEl = document.getElementById('total-count');
-    const startBtn = document.getElementById('start-btn');
-
-    MandarinApp.ready(async () => {
-      const { due, total } = await MandarinApp.getStats();
-      dueCountEl.textContent = due;
-      totalCountEl.textContent = total;
-    });
-
-    startBtn.addEventListener('click', () => {
-      window.location.href = 'study.html';
-    });
-  </script>
 </body>
 </html>
