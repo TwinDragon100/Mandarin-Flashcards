@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study • Mandarin Flashcards</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Study</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="study.html" aria-current="page">Study</a>
+      <a href="add.html">Add Card</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="card-view" class="card">
+      <p id="hanzi" class="hanzi">Loading…</p>
+      <p id="pinyin" class="pinyin"></p>
+      <p id="english" class="english"></p>
+      <div class="tags" id="tags"></div>
+    </section>
+    <div class="controls">
+      <button id="fail-btn" class="secondary">Need Review</button>
+      <button id="pass-btn" class="primary">Got It</button>
+    </div>
+    <p id="empty-message" class="hint" hidden>All caught up! Come back later or add new cards.</p>
+  </main>
+
+  <script src="app.js" type="module"></script>
+  <script type="module">
+    import { MandarinApp } from './app.js';
+
+    const hanziEl = document.getElementById('hanzi');
+    const pinyinEl = document.getElementById('pinyin');
+    const englishEl = document.getElementById('english');
+    const tagsEl = document.getElementById('tags');
+    const failBtn = document.getElementById('fail-btn');
+    const passBtn = document.getElementById('pass-btn');
+    const emptyMessage = document.getElementById('empty-message');
+
+    let queue = [];
+    let currentCard = null;
+
+    function renderCard(card) {
+      if (!card) {
+        hanziEl.textContent = '🎉';
+        pinyinEl.textContent = '';
+        englishEl.textContent = 'No cards due right now';
+        tagsEl.innerHTML = '';
+        failBtn.disabled = true;
+        passBtn.disabled = true;
+        emptyMessage.hidden = false;
+        return;
+      }
+      emptyMessage.hidden = true;
+      failBtn.disabled = false;
+      passBtn.disabled = false;
+      hanziEl.textContent = card.hanzi;
+      pinyinEl.textContent = card.pinyin;
+      englishEl.textContent = card.english;
+      tagsEl.innerHTML = (card.tags || []).map(t => `<span class="chip">${t}</span>`).join('');
+    }
+
+    async function loadQueue() {
+      queue = await MandarinApp.getStudyQueue(20);
+      currentCard = queue.shift() || null;
+      renderCard(currentCard);
+    }
+
+    async function handleResult(quality) {
+      if (!currentCard) return;
+      await MandarinApp.reviewCard(currentCard.id, quality);
+      currentCard = queue.shift() || null;
+      if (!currentCard) {
+        await loadQueue();
+      } else {
+        renderCard(currentCard);
+      }
+    }
+
+    failBtn.addEventListener('click', () => handleResult(0));
+    passBtn.addEventListener('click', () => handleResult(1));
+
+    MandarinApp.ready(loadQueue);
+  </script>
+</body>
+</html>

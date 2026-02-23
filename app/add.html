@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Card • Mandarin Flashcards</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Add Card</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="study.html">Study</a>
+      <a href="add.html" aria-current="page">Add Card</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="card-form" class="card-form">
+      <label>Hanzi
+        <input type="text" name="hanzi" required />
+      </label>
+      <label>Pinyin
+        <div class="tone-input">
+          <input type="text" name="pinyin" id="pinyin-field" required />
+          <div class="tone-buttons" aria-label="Tone selection">
+            <button type="button" data-tone="1">1ˉ</button>
+            <button type="button" data-tone="2">2ˊ</button>
+            <button type="button" data-tone="3">3ˇ</button>
+            <button type="button" data-tone="4">4ˋ</button>
+            <button type="button" data-tone="5">·</button>
+          </div>
+        </div>
+      </label>
+      <label>English meaning
+        <textarea name="english" required></textarea>
+      </label>
+      <label>Deck
+        <input type="text" name="deck" value="HSK1" />
+      </label>
+      <label>Tags (comma separated)
+        <input type="text" name="tags" placeholder="HSK1, greeting" />
+      </label>
+      <button type="submit" class="primary">Save Card</button>
+      <p id="status" class="hint"></p>
+    </form>
+
+    <section class="preview">
+      <h2>Preview</h2>
+      <p class="hanzi" id="preview-hanzi">—</p>
+      <p class="pinyin" id="preview-pinyin">—</p>
+      <p class="english" id="preview-english">—</p>
+    </section>
+  </main>
+
+  <script src="app.js" type="module"></script>
+  <script type="module">
+    import { MandarinApp } from './app.js';
+
+    const form = document.getElementById('card-form');
+    const statusEl = document.getElementById('status');
+    const previewHanzi = document.getElementById('preview-hanzi');
+    const previewPinyin = document.getElementById('preview-pinyin');
+    const previewEnglish = document.getElementById('preview-english');
+    const pinyinField = document.getElementById('pinyin-field');
+    const toneButtons = document.querySelectorAll('.tone-buttons button');
+
+    const toneMap = {
+      1: { a: 'ā', e: 'ē', i: 'ī', o: 'ō', u: 'ū', v: 'ǖ' },
+      2: { a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', v: 'ǘ' },
+      3: { a: 'ǎ', e: 'ě', i: 'ǐ', o: 'ǒ', u: 'ǔ', v: 'ǚ' },
+      4: { a: 'à', e: 'è', i: 'ì', o: 'ò', u: 'ù', v: 'ǜ' }
+    };
+
+    function applyTone(tone) {
+      const value = pinyinField.value;
+      if (!value) return;
+      const vowels = ['a', 'e', 'o', 'i', 'u', 'v'];
+      for (let i = value.length - 1; i >= 0; i--) {
+        const char = value[i];
+        const lower = char.toLowerCase();
+        if (vowels.includes(lower)) {
+          if (tone === '5') {
+            // neutral: remove diacritic
+            const plain = plainVowel(lower);
+            pinyinField.value = value.slice(0, i) + matchCase(plain, char) + value.slice(i + 1);
+            break;
+          }
+          const map = toneMap[tone];
+          if (!map) break;
+          const replacement = map[lower];
+          if (!replacement) break;
+          pinyinField.value = value.slice(0, i) + matchCase(replacement, char) + value.slice(i + 1);
+          break;
+        }
+      }
+      updatePreview();
+    }
+
+    function plainVowel(vowel) {
+      const lookup = {
+        ā: 'a', á: 'a', ǎ: 'a', à: 'a',
+        ē: 'e', é: 'e', ě: 'e', è: 'e',
+        ī: 'i', í: 'i', ǐ: 'i', ì: 'i',
+        ō: 'o', ó: 'o', ǒ: 'o', ò: 'o',
+        ū: 'u', ú: 'u', ǔ: 'u', ù: 'u',
+        ǖ: 'v', ǘ: 'v', ǚ: 'v', ǜ: 'v'
+      };
+      return lookup[vowel] || vowel;
+    }
+
+    function matchCase(char, original) {
+      return original === original.toUpperCase() ? char.toUpperCase() : char;
+    }
+
+    toneButtons.forEach(btn => {
+      btn.addEventListener('click', () => applyTone(btn.dataset.tone));
+    });
+
+    function updatePreview() {
+      const data = new FormData(form);
+      previewHanzi.textContent = data.get('hanzi') || '—';
+      previewPinyin.textContent = data.get('pinyin') || '—';
+      previewEnglish.textContent = data.get('english') || '—';
+    }
+
+    form.addEventListener('input', updatePreview);
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const card = {
+        hanzi: data.get('hanzi').trim(),
+        pinyin: data.get('pinyin').trim(),
+        english: data.get('english').trim(),
+        deck: data.get('deck').trim() || 'HSK1',
+        tags: (data.get('tags') || '').split(',').map(t => t.trim()).filter(Boolean)
+      };
+      if (!card.hanzi || !card.pinyin || !card.english) {
+        statusEl.textContent = 'Please fill out Hanzi, Pinyin, and English.';
+        return;
+      }
+      await MandarinApp.addCard(card);
+      form.reset();
+      updatePreview();
+      statusEl.textContent = 'Saved! Add another?';
+      setTimeout(() => (statusEl.textContent = ''), 3000);
+    });
+
+    updatePreview();
+  </script>
+</body>
+</html>
