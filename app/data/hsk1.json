@@ -1,0 +1,47 @@
+[
+  {
+    "id": "hsk1-nihao",
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "toneNumbers": [3, 3],
+    "english": "hello",
+    "tags": ["HSK1", "greeting"],
+    "deck": "HSK1"
+  },
+  {
+    "id": "hsk1-xiexie",
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "toneNumbers": [4, 5],
+    "english": "thank you",
+    "tags": ["HSK1", "polite"],
+    "deck": "HSK1"
+  },
+  {
+    "id": "hsk1-zaijian",
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "toneNumbers": [4, 4],
+    "english": "goodbye",
+    "tags": ["HSK1", "greeting"],
+    "deck": "HSK1"
+  },
+  {
+    "id": "hsk1-qing",
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "toneNumbers": [3],
+    "english": "please",
+    "tags": ["HSK1", "polite"],
+    "deck": "HSK1"
+  },
+  {
+    "id": "hsk1-duibuqi",
+    "hanzi": "对不起",
+    "pinyin": "duìbuqǐ",
+    "toneNumbers": [4, 5, 3],
+    "english": "sorry",
+    "tags": ["HSK1", "polite"],
+    "deck": "HSK1"
+  }
+]
