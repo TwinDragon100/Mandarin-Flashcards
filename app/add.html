@@ -7,7 +7,8 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+
+<body data-page="add">
   <header>
     <h1>Add Card</h1>
     <nav>
@@ -35,8 +36,17 @@
           </div>
         </div>
       </label>
+
       <label>English meaning
-        <textarea name="english" required></textarea>
+       <textarea name="english" required></textarea>
+      </label>
+
+      <label>Example (Pinyin)
+      <input type="text" name="examplePinyin" />
+      </label>
+
+      <label>Example (English)
+      <input type="text" name="exampleEn" />
       </label>
       <label>Deck
         <input type="text" name="deck" value="HSK1" />
