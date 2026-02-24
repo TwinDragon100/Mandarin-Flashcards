@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study • Mandarin Flashcards</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="study">
+  <header class="topbar">
+    <div class="brand">Mandarin Flashcards</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="study.html" aria-current="page">Study</a>
+      <a href="add.html">Add Card</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Study</h1>
+    <p data-status>Loading…</p>
+    <p id="card-count" style="font-size: 12px; opacity: 0.75; margin-top: -6px;">&nbsp;</p>
+    <div id="study-root"></div>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

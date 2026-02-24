@@ -1,0 +1,1719 @@
+[
+  {
+    "id": "hsk1-你好-hello",
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "toneNumbers": [
+      3,
+      3
+    ],
+    "english": "hello",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǐ hǎo!",
+    "exampleEn": "Hello!"
+  },
+  {
+    "id": "hsk1-谢谢-thank-you",
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "toneNumbers": [
+      4,
+      5
+    ],
+    "english": "thank you",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Xièxie nǐ.",
+    "exampleEn": "Thank you."
+  },
+  {
+    "id": "hsk1-再见-goodbye",
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "toneNumbers": [
+      4,
+      4
+    ],
+    "english": "goodbye",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zàijiàn!",
+    "exampleEn": "Goodbye!"
+  },
+  {
+    "id": "hsk1-请-please",
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "toneNumbers": [
+      3
+    ],
+    "english": "please",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Qǐng jìn.",
+    "exampleEn": "Please come in."
+  },
+  {
+    "id": "hsk1-对不起-sorry",
+    "hanzi": "对不起",
+    "pinyin": "duìbuqǐ",
+    "toneNumbers": [
+      4,
+      5,
+      3
+    ],
+    "english": "sorry",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Duìbuqǐ.",
+    "exampleEn": "Sorry."
+  },
+  {
+    "id": "hsk1-没关系-no-problem",
+    "hanzi": "没关系",
+    "pinyin": "méi guānxi",
+    "toneNumbers": [
+      2,
+      1,
+      5
+    ],
+    "english": "no problem",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Méi guānxi.",
+    "exampleEn": "No problem."
+  },
+  {
+    "id": "hsk1-是-to-be-yes",
+    "hanzi": "是",
+    "pinyin": "shì",
+    "toneNumbers": [
+      4
+    ],
+    "english": "to be / yes",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Shì.",
+    "exampleEn": "Yes."
+  },
+  {
+    "id": "hsk1-不是-is-not-no",
+    "hanzi": "不是",
+    "pinyin": "bú shì",
+    "toneNumbers": [
+      2,
+      4
+    ],
+    "english": "is not / no",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Bú shì.",
+    "exampleEn": "No."
+  },
+  {
+    "id": "hsk1-有-to-have",
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "toneNumbers": [
+      3
+    ],
+    "english": "to have",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ yǒu shíjiān.",
+    "exampleEn": "I have time."
+  },
+  {
+    "id": "hsk1-没有-to-not-have",
+    "hanzi": "没有",
+    "pinyin": "méi yǒu",
+    "toneNumbers": [
+      2,
+      3
+    ],
+    "english": "to not have",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ méi yǒu qián.",
+    "exampleEn": "I don't have money."
+  },
+  {
+    "id": "hsk1-我-i-me",
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "toneNumbers": [
+      3
+    ],
+    "english": "I / me",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ shì Shèwēn.",
+    "exampleEn": "I am Steven."
+  },
+  {
+    "id": "hsk1-你-you",
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "toneNumbers": [
+      3
+    ],
+    "english": "you",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǐ hǎo ma?",
+    "exampleEn": "How are you?"
+  },
+  {
+    "id": "hsk1-他-he-him",
+    "hanzi": "他",
+    "pinyin": "tā",
+    "toneNumbers": [
+      1
+    ],
+    "english": "he / him",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā shì xuéshēng.",
+    "exampleEn": "He is a student."
+  },
+  {
+    "id": "hsk1-她-she-her",
+    "hanzi": "她",
+    "pinyin": "tā",
+    "toneNumbers": [
+      1
+    ],
+    "english": "she / her",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā shì lǎoshī.",
+    "exampleEn": "She is a teacher."
+  },
+  {
+    "id": "hsk1-我们-we-us",
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "toneNumbers": [
+      3,
+      5
+    ],
+    "english": "we / us",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒmen qù ba.",
+    "exampleEn": "Let's go."
+  },
+  {
+    "id": "hsk1-你们-you-plural-",
+    "hanzi": "你们",
+    "pinyin": "nǐmen",
+    "toneNumbers": [
+      3,
+      5
+    ],
+    "english": "you (plural)",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǐmen hǎo!",
+    "exampleEn": "Hello everyone!"
+  },
+  {
+    "id": "hsk1-他们-they",
+    "hanzi": "他们",
+    "pinyin": "tāmen",
+    "toneNumbers": [
+      1,
+      5
+    ],
+    "english": "they",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tāmen dōu hěn máng.",
+    "exampleEn": "They are all busy."
+  },
+  {
+    "id": "hsk1-这-this",
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "toneNumbers": [
+      4
+    ],
+    "english": "this",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zhè shì shū.",
+    "exampleEn": "This is a book."
+  },
+  {
+    "id": "hsk1-那-that",
+    "hanzi": "那",
+    "pinyin": "nà",
+    "toneNumbers": [
+      4
+    ],
+    "english": "that",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nà shì bēizi.",
+    "exampleEn": "That is a cup."
+  },
+  {
+    "id": "hsk1-哪-which",
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "toneNumbers": [
+      3
+    ],
+    "english": "which",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǎ gè?",
+    "exampleEn": "Which one?"
+  },
+  {
+    "id": "hsk1-哪儿-where",
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "toneNumbers": [
+      3,
+      5
+    ],
+    "english": "where",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǐ zài nǎr?",
+    "exampleEn": "Where are you?"
+  },
+  {
+    "id": "hsk1-什么-what",
+    "hanzi": "什么",
+    "pinyin": "shénme",
+    "toneNumbers": [
+      2,
+      5
+    ],
+    "english": "what",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zhè shì shénme?",
+    "exampleEn": "What is this?"
+  },
+  {
+    "id": "hsk1-谁-who",
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "toneNumbers": [
+      2
+    ],
+    "english": "who",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā shì shéi?",
+    "exampleEn": "Who is he?"
+  },
+  {
+    "id": "hsk1-多少-how-much-many",
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "toneNumbers": [
+      1,
+      5
+    ],
+    "english": "how much / many",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zhè ge duōshao qián?",
+    "exampleEn": "How much is this?"
+  },
+  {
+    "id": "hsk1-几-how-many-small-",
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "toneNumbers": [
+      3
+    ],
+    "english": "how many (small)",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǐ yǒu jǐ gè?",
+    "exampleEn": "How many do you have?"
+  },
+  {
+    "id": "hsk1-一-one",
+    "hanzi": "一",
+    "pinyin": "yī",
+    "toneNumbers": [
+      1
+    ],
+    "english": "one",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Yī gè rén.",
+    "exampleEn": "One person."
+  },
+  {
+    "id": "hsk1-二-two",
+    "hanzi": "二",
+    "pinyin": "èr",
+    "toneNumbers": [
+      4
+    ],
+    "english": "two",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Liǎng gè rén.",
+    "exampleEn": "Two people."
+  },
+  {
+    "id": "hsk1-三-three",
+    "hanzi": "三",
+    "pinyin": "sān",
+    "toneNumbers": [
+      1
+    ],
+    "english": "three",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Sān běn shū.",
+    "exampleEn": "Three books."
+  },
+  {
+    "id": "hsk1-四-four",
+    "hanzi": "四",
+    "pinyin": "sì",
+    "toneNumbers": [
+      4
+    ],
+    "english": "four",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Sì gè píngguǒ.",
+    "exampleEn": "Four apples."
+  },
+  {
+    "id": "hsk1-五-five",
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "toneNumbers": [
+      3
+    ],
+    "english": "five",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǔ gè rén.",
+    "exampleEn": "Five people."
+  },
+  {
+    "id": "hsk1-六-six",
+    "hanzi": "六",
+    "pinyin": "liù",
+    "toneNumbers": [
+      4
+    ],
+    "english": "six",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Liù diǎn.",
+    "exampleEn": "Six o'clock."
+  },
+  {
+    "id": "hsk1-七-seven",
+    "hanzi": "七",
+    "pinyin": "qī",
+    "toneNumbers": [
+      1
+    ],
+    "english": "seven",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Qī tiān.",
+    "exampleEn": "Seven days."
+  },
+  {
+    "id": "hsk1-八-eight",
+    "hanzi": "八",
+    "pinyin": "bā",
+    "toneNumbers": [
+      1
+    ],
+    "english": "eight",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Bā kuài.",
+    "exampleEn": "Eight dollars."
+  },
+  {
+    "id": "hsk1-九-nine",
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "toneNumbers": [
+      3
+    ],
+    "english": "nine",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Jiǔ ge.",
+    "exampleEn": "Nine."
+  },
+  {
+    "id": "hsk1-十-ten",
+    "hanzi": "十",
+    "pinyin": "shí",
+    "toneNumbers": [
+      2
+    ],
+    "english": "ten",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Shí gè.",
+    "exampleEn": "Ten."
+  },
+  {
+    "id": "hsk1-爸爸-dad",
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "toneNumbers": [
+      4,
+      5
+    ],
+    "english": "dad",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ bàba hěn máng.",
+    "exampleEn": "My dad is busy."
+  },
+  {
+    "id": "hsk1-妈妈-mom",
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "toneNumbers": [
+      1,
+      5
+    ],
+    "english": "mom",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ māma hěn hǎo.",
+    "exampleEn": "My mom is nice."
+  },
+  {
+    "id": "hsk1-儿子-son",
+    "hanzi": "儿子",
+    "pinyin": "érzi",
+    "toneNumbers": [
+      2,
+      5
+    ],
+    "english": "son",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā yǒu yí gè érzi.",
+    "exampleEn": "He has a son."
+  },
+  {
+    "id": "hsk1-女儿-daughter",
+    "hanzi": "女儿",
+    "pinyin": "nǚ'ér",
+    "toneNumbers": [
+      3,
+      2
+    ],
+    "english": "daughter",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā yǒu yí gè nǚ'ér.",
+    "exampleEn": "She has a daughter."
+  },
+  {
+    "id": "hsk1-朋友-friend",
+    "hanzi": "朋友",
+    "pinyin": "péngyou",
+    "toneNumbers": [
+      2,
+      5
+    ],
+    "english": "friend",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā shì wǒ de péngyou.",
+    "exampleEn": "He is my friend."
+  },
+  {
+    "id": "hsk1-老师-teacher",
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "toneNumbers": [
+      3,
+      1
+    ],
+    "english": "teacher",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ shì lǎoshī.",
+    "exampleEn": "I am a teacher."
+  },
+  {
+    "id": "hsk1-学生-student",
+    "hanzi": "学生",
+    "pinyin": "xuéshēng",
+    "toneNumbers": [
+      2,
+      1
+    ],
+    "english": "student",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā shì xuéshēng.",
+    "exampleEn": "She is a student."
+  },
+  {
+    "id": "hsk1-同学-classmate",
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "toneNumbers": [
+      2,
+      2
+    ],
+    "english": "classmate",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā shì wǒ tóngxué.",
+    "exampleEn": "He is my classmate."
+  },
+  {
+    "id": "hsk1-名字-name",
+    "hanzi": "名字",
+    "pinyin": "míngzi",
+    "toneNumbers": [
+      2,
+      5
+    ],
+    "english": "name",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǐ jiào shénme míngzi?",
+    "exampleEn": "What is your name?"
+  },
+  {
+    "id": "hsk1-叫-to-be-called",
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "toneNumbers": [
+      4
+    ],
+    "english": "to be called",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ jiào Shèwēn.",
+    "exampleEn": "My name is Steven."
+  },
+  {
+    "id": "hsk1-姓-surname",
+    "hanzi": "姓",
+    "pinyin": "xìng",
+    "toneNumbers": [
+      4
+    ],
+    "english": "surname",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ xìng Wài.",
+    "exampleEn": "My surname is Wright."
+  },
+  {
+    "id": "hsk1-国-country",
+    "hanzi": "国",
+    "pinyin": "guó",
+    "toneNumbers": [
+      2
+    ],
+    "english": "country",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǐ shì nǎ guó rén?",
+    "exampleEn": "Which country are you from?"
+  },
+  {
+    "id": "hsk1-中国-china",
+    "hanzi": "中国",
+    "pinyin": "Zhōngguó",
+    "toneNumbers": [
+      1,
+      2
+    ],
+    "english": "China",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ zài Zhōngguó.",
+    "exampleEn": "I’m in China."
+  },
+  {
+    "id": "hsk1-美国-usa",
+    "hanzi": "美国",
+    "pinyin": "Měiguó",
+    "toneNumbers": [
+      3,
+      2
+    ],
+    "english": "USA",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā zài Měiguó.",
+    "exampleEn": "He is in the USA."
+  },
+  {
+    "id": "hsk1-北京-beijing",
+    "hanzi": "北京",
+    "pinyin": "Běijīng",
+    "toneNumbers": [
+      3,
+      1
+    ],
+    "english": "Beijing",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ qù Běijīng.",
+    "exampleEn": "I’m going to Beijing."
+  },
+  {
+    "id": "hsk1-汉语-chinese-language-",
+    "hanzi": "汉语",
+    "pinyin": "Hànyǔ",
+    "toneNumbers": [
+      4,
+      3
+    ],
+    "english": "Chinese (language)",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ xué Hànyǔ.",
+    "exampleEn": "I study Chinese."
+  },
+  {
+    "id": "hsk1-中文-chinese-language-",
+    "hanzi": "中文",
+    "pinyin": "Zhōngwén",
+    "toneNumbers": [
+      1,
+      2
+    ],
+    "english": "Chinese (language)",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ huì Zhōngwén.",
+    "exampleEn": "I can speak Chinese."
+  },
+  {
+    "id": "hsk1-学习-to-study",
+    "hanzi": "学习",
+    "pinyin": "xuéxí",
+    "toneNumbers": [
+      2,
+      2
+    ],
+    "english": "to study",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ yào xuéxí.",
+    "exampleEn": "I want to study."
+  },
+  {
+    "id": "hsk1-看-to-look-watch",
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "toneNumbers": [
+      4
+    ],
+    "english": "to look / watch",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ kàn shū.",
+    "exampleEn": "I read a book."
+  },
+  {
+    "id": "hsk1-听-to-listen",
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "toneNumbers": [
+      1
+    ],
+    "english": "to listen",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ tīng yīnyuè.",
+    "exampleEn": "I listen to music."
+  },
+  {
+    "id": "hsk1-说-to-speak",
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "toneNumbers": [
+      1
+    ],
+    "english": "to speak",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ shuō Zhōngwén.",
+    "exampleEn": "I speak Chinese."
+  },
+  {
+    "id": "hsk1-读-to-read",
+    "hanzi": "读",
+    "pinyin": "dú",
+    "toneNumbers": [
+      2
+    ],
+    "english": "to read",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ dú shū.",
+    "exampleEn": "I read."
+  },
+  {
+    "id": "hsk1-写-to-write",
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "toneNumbers": [
+      3
+    ],
+    "english": "to write",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ xiě zì.",
+    "exampleEn": "I write characters."
+  },
+  {
+    "id": "hsk1-去-to-go",
+    "hanzi": "去",
+    "pinyin": "qù",
+    "toneNumbers": [
+      4
+    ],
+    "english": "to go",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ qù xuéxiào.",
+    "exampleEn": "I go to school."
+  },
+  {
+    "id": "hsk1-来-to-come",
+    "hanzi": "来",
+    "pinyin": "lái",
+    "toneNumbers": [
+      2
+    ],
+    "english": "to come",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Nǐ lái ma?",
+    "exampleEn": "Are you coming?"
+  },
+  {
+    "id": "hsk1-回-to-return",
+    "hanzi": "回",
+    "pinyin": "huí",
+    "toneNumbers": [
+      2
+    ],
+    "english": "to return",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ huí jiā.",
+    "exampleEn": "I go home."
+  },
+  {
+    "id": "hsk1-在-to-be-at",
+    "hanzi": "在",
+    "pinyin": "zài",
+    "toneNumbers": [
+      4
+    ],
+    "english": "to be at",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ zài jiā.",
+    "exampleEn": "I am at home."
+  },
+  {
+    "id": "hsk1-住-to-live",
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "toneNumbers": [
+      4
+    ],
+    "english": "to live",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ zhù zài Bēijīng.",
+    "exampleEn": "I live in Beijing."
+  },
+  {
+    "id": "hsk1-坐-to-sit-take-transport-",
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "toneNumbers": [
+      4
+    ],
+    "english": "to sit / take (transport)",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ zuò chē.",
+    "exampleEn": "I take a car."
+  },
+  {
+    "id": "hsk1-买-to-buy",
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "toneNumbers": [
+      3
+    ],
+    "english": "to buy",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ mǎi shuǐ.",
+    "exampleEn": "I buy water."
+  },
+  {
+    "id": "hsk1-喝-to-drink",
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "toneNumbers": [
+      1
+    ],
+    "english": "to drink",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ hē kāfēi.",
+    "exampleEn": "I drink coffee."
+  },
+  {
+    "id": "hsk1-吃-to-eat",
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "toneNumbers": [
+      1
+    ],
+    "english": "to eat",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ chī fàn.",
+    "exampleEn": "I eat."
+  },
+  {
+    "id": "hsk1-水-water",
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "toneNumbers": [
+      3
+    ],
+    "english": "water",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ yào shuǐ.",
+    "exampleEn": "I want water."
+  },
+  {
+    "id": "hsk1-茶-tea",
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "toneNumbers": [
+      2
+    ],
+    "english": "tea",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ hē chá.",
+    "exampleEn": "I drink tea."
+  },
+  {
+    "id": "hsk1-咖啡-coffee",
+    "hanzi": "咖啡",
+    "pinyin": "kāfēi",
+    "toneNumbers": [
+      1,
+      1
+    ],
+    "english": "coffee",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ yào kāfēi.",
+    "exampleEn": "I want coffee."
+  },
+  {
+    "id": "hsk1-米饭-rice-cooked-",
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "toneNumbers": [
+      3,
+      4
+    ],
+    "english": "rice (cooked)",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ chī mǐfàn.",
+    "exampleEn": "I eat rice."
+  },
+  {
+    "id": "hsk1-面条-noodles",
+    "hanzi": "面条",
+    "pinyin": "miàntiáo",
+    "toneNumbers": [
+      4,
+      2
+    ],
+    "english": "noodles",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ xǐhuan miàntiáo.",
+    "exampleEn": "I like noodles."
+  },
+  {
+    "id": "hsk1-苹果-apple",
+    "hanzi": "苹果",
+    "pinyin": "píngguǒ",
+    "toneNumbers": [
+      2,
+      3
+    ],
+    "english": "apple",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ chī píngguǒ.",
+    "exampleEn": "I eat an apple."
+  },
+  {
+    "id": "hsk1-大-big",
+    "hanzi": "大",
+    "pinyin": "dà",
+    "toneNumbers": [
+      4
+    ],
+    "english": "big",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zhè ge hěn dà.",
+    "exampleEn": "This one is big."
+  },
+  {
+    "id": "hsk1-小-small",
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "toneNumbers": [
+      3
+    ],
+    "english": "small",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zhè ge hěn xiǎo.",
+    "exampleEn": "This one is small."
+  },
+  {
+    "id": "hsk1-多-many-much",
+    "hanzi": "多",
+    "pinyin": "duō",
+    "toneNumbers": [
+      1
+    ],
+    "english": "many / much",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ yǒu hěn duō shū.",
+    "exampleEn": "I have many books."
+  },
+  {
+    "id": "hsk1-少-few-little",
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "toneNumbers": [
+      3
+    ],
+    "english": "few / little",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ yǒu hěn shǎo shíjiān.",
+    "exampleEn": "I have little time."
+  },
+  {
+    "id": "hsk1-好-good",
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "toneNumbers": [
+      3
+    ],
+    "english": "good",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Jīntiān hěn hǎo.",
+    "exampleEn": "Today is good."
+  },
+  {
+    "id": "hsk1-不-not",
+    "hanzi": "不",
+    "pinyin": "bù",
+    "toneNumbers": [
+      4
+    ],
+    "english": "not",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ bù qù.",
+    "exampleEn": "I’m not going."
+  },
+  {
+    "id": "hsk1-今天-today",
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "toneNumbers": [
+      1,
+      1
+    ],
+    "english": "today",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Jīntiān wǒ hěn máng.",
+    "exampleEn": "I’m busy today."
+  },
+  {
+    "id": "hsk1-明天-tomorrow",
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "toneNumbers": [
+      2,
+      1
+    ],
+    "english": "tomorrow",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Míngtiān jiàn.",
+    "exampleEn": "See you tomorrow."
+  },
+  {
+    "id": "hsk1-昨天-yesterday",
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "toneNumbers": [
+      2,
+      1
+    ],
+    "english": "yesterday",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zuótiān wǒ zài jiā.",
+    "exampleEn": "I was at home yesterday."
+  },
+  {
+    "id": "hsk1-现在-now",
+    "hanzi": "现在",
+    "pinyin": "xiànzài",
+    "toneNumbers": [
+      4,
+      4
+    ],
+    "english": "now",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Xiànzài jǐ diǎn?",
+    "exampleEn": "What time is it now?"
+  },
+  {
+    "id": "hsk1-时候-time-when",
+    "hanzi": "时候",
+    "pinyin": "shíhou",
+    "toneNumbers": [
+      2,
+      5
+    ],
+    "english": "time / when",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Shénme shíhou qù?",
+    "exampleEn": "When are you going?"
+  },
+  {
+    "id": "hsk1-点-o-clock",
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "toneNumbers": [
+      3
+    ],
+    "english": "o’clock",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Xiànzài liǎng diǎn.",
+    "exampleEn": "It’s 2 o’clock."
+  },
+  {
+    "id": "hsk1-分钟-minute",
+    "hanzi": "分钟",
+    "pinyin": "fēnzhōng",
+    "toneNumbers": [
+      1,
+      1
+    ],
+    "english": "minute",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ děng wǔ fēnzhōng.",
+    "exampleEn": "I’ll wait five minutes."
+  },
+  {
+    "id": "hsk1-星期-week",
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "toneNumbers": [
+      1,
+      1
+    ],
+    "english": "week",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Jīntiān xīngqī jǐ?",
+    "exampleEn": "What day is it?"
+  },
+  {
+    "id": "hsk1-学校-school",
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "toneNumbers": [
+      2,
+      4
+    ],
+    "english": "school",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ qù xuéxiào.",
+    "exampleEn": "I go to school."
+  },
+  {
+    "id": "hsk1-家-home",
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "toneNumbers": [
+      1
+    ],
+    "english": "home",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ zài jiā.",
+    "exampleEn": "I’m at home."
+  },
+  {
+    "id": "hsk1-商店-shop",
+    "hanzi": "商店",
+    "pinyin": "shāngdiàn",
+    "toneNumbers": [
+      1,
+      4
+    ],
+    "english": "shop",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ qù shāngdiàn.",
+    "exampleEn": "I go to the shop."
+  },
+  {
+    "id": "hsk1-医院-hospital",
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "toneNumbers": [
+      1,
+      4
+    ],
+    "english": "hospital",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Tā zài yīyuàn.",
+    "exampleEn": "He is at the hospital."
+  },
+  {
+    "id": "hsk1-钱-money",
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "toneNumbers": [
+      2
+    ],
+    "english": "money",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ méi yǒu qián.",
+    "exampleEn": "I don’t have money."
+  },
+  {
+    "id": "hsk1-多少-how-much",
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "toneNumbers": [
+      1,
+      5
+    ],
+    "english": "how much",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Duōshao qián?",
+    "exampleEn": "How much money?"
+  },
+  {
+    "id": "hsk1-块-yuan-spoken-",
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "toneNumbers": [
+      4
+    ],
+    "english": "yuan (spoken)",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Shí kuài qián.",
+    "exampleEn": "Ten yuan."
+  },
+  {
+    "id": "hsk1-喜欢-to-like",
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "toneNumbers": [
+      3,
+      5
+    ],
+    "english": "to like",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ xǐhuan nǐ.",
+    "exampleEn": "I like you."
+  },
+  {
+    "id": "hsk1-爱-to-love",
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "toneNumbers": [
+      4
+    ],
+    "english": "to love",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ ài jiā.",
+    "exampleEn": "I love home."
+  },
+  {
+    "id": "hsk1-想-to-want-miss-think",
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "toneNumbers": [
+      3
+    ],
+    "english": "to want / miss / think",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ xiǎng hē chá.",
+    "exampleEn": "I want to drink tea."
+  },
+  {
+    "id": "hsk1-热-hot",
+    "hanzi": "热",
+    "pinyin": "rè",
+    "toneNumbers": [
+      4
+    ],
+    "english": "hot",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Jīntiān hěn rè.",
+    "exampleEn": "Today is hot."
+  },
+  {
+    "id": "hsk1-冷-cold",
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "toneNumbers": [
+      3
+    ],
+    "english": "cold",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Jīntiān hěn lěng.",
+    "exampleEn": "Today is cold."
+  },
+  {
+    "id": "hsk1-忙-busy",
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "toneNumbers": [
+      2
+    ],
+    "english": "busy",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ hěn máng.",
+    "exampleEn": "I’m busy."
+  },
+  {
+    "id": "hsk1-上-up-on",
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "toneNumbers": [
+      4
+    ],
+    "english": "up / on",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Shàng miàn.",
+    "exampleEn": "Above."
+  },
+  {
+    "id": "hsk1-下-down-under",
+    "hanzi": "下",
+    "pinyin": "xià",
+    "toneNumbers": [
+      4
+    ],
+    "english": "down / under",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Xià miàn.",
+    "exampleEn": "Below."
+  },
+  {
+    "id": "hsk1-前面-in-front",
+    "hanzi": "前面",
+    "pinyin": "qiánmiàn",
+    "toneNumbers": [
+      2,
+      4
+    ],
+    "english": "in front",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zài qiánmiàn.",
+    "exampleEn": "In front."
+  },
+  {
+    "id": "hsk1-后面-behind",
+    "hanzi": "后面",
+    "pinyin": "hòumiàn",
+    "toneNumbers": [
+      4,
+      4
+    ],
+    "english": "behind",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zài hòumiàn.",
+    "exampleEn": "Behind."
+  },
+  {
+    "id": "hsk1-左-left",
+    "hanzi": "左",
+    "pinyin": "zuǒ",
+    "toneNumbers": [
+      3
+    ],
+    "english": "left",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zuǒ biān.",
+    "exampleEn": "Left side."
+  },
+  {
+    "id": "hsk1-右-right",
+    "hanzi": "右",
+    "pinyin": "yòu",
+    "toneNumbers": [
+      4
+    ],
+    "english": "right",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Yòu biān.",
+    "exampleEn": "Right side."
+  },
+  {
+    "id": "hsk1-书-book",
+    "hanzi": "书",
+    "pinyin": "shū",
+    "toneNumbers": [
+      1
+    ],
+    "english": "book",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zhè shì shū.",
+    "exampleEn": "This is a book."
+  },
+  {
+    "id": "hsk1-电脑-computer",
+    "hanzi": "电脑",
+    "pinyin": "diànnǎo",
+    "toneNumbers": [
+      4,
+      3
+    ],
+    "english": "computer",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ yǒu diànnǎo.",
+    "exampleEn": "I have a computer."
+  },
+  {
+    "id": "hsk1-手机-mobile-phone",
+    "hanzi": "手机",
+    "pinyin": "shǒujī",
+    "toneNumbers": [
+      3,
+      1
+    ],
+    "english": "mobile phone",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Wǒ de shǒujī zài nǎr?",
+    "exampleEn": "Where is my phone?"
+  },
+  {
+    "id": "hsk1-桌子-table",
+    "hanzi": "桌子",
+    "pinyin": "zhuōzi",
+    "toneNumbers": [
+      1,
+      5
+    ],
+    "english": "table",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zhè shì zhuōzi.",
+    "exampleEn": "This is a table."
+  },
+  {
+    "id": "hsk1-椅子-chair",
+    "hanzi": "椅子",
+    "pinyin": "yǐzi",
+    "toneNumbers": [
+      3,
+      5
+    ],
+    "english": "chair",
+    "tags": [
+      "HSK1"
+    ],
+    "deck": "HSK1",
+    "examplePinyin": "Zhè shì yǐzi.",
+    "exampleEn": "This is a chair."
+  }
+]

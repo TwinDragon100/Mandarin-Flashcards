@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings • Mandarin Flashcards</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Settings</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="study.html">Study</a>
+      <a href="add.html">Add Card</a>
+      <a href="settings.html" aria-current="page">Settings</a>
+    </nav>
+  </header>
+
+  <main>
+<section>
+  <h2>Deck Selection</h2>
+  <label>
+    <input type="radio" name="deckMode" value="HSK1" checked>
+    HSK 1
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="deckMode" value="HSK2">
+    HSK 2
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="deckMode" value="BOTH">
+    HSK 1 + HSK 2
+  </label>
+</section>
+    <form id="settings-form" class="card-form">
+      <label>Theme
+        <select name="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="system">System</option>
+        </select>
+      </label>
+      <label>Tone colors (comma separated hex)
+        <input type="text" name="toneColors" placeholder="#e74c3c,#f39c12,#27ae60,#2980b9,#95a5a6" />
+      </label>
+      <button type="submit" class="primary">Save Settings</button>
+      <p id="settings-status" class="hint"></p>
+    </form>
+  </main>
+
+<script type="module" src="./app.js"></script>
+
+</body>
+</html>

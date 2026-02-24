@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mandarin Flashcards</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#f15a24" />
+</head>
+<body>
+  <header>
+    <h1>Mandarin Flashcards</h1>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="study.html">Study</a>
+      <a href="add.html">Add Card</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Local & Offline</h2>
+      <p>The entire app runs locally, stores your progress on-device, and works without an internet connection.</p>
+    </section>
+
+    <section id="stats">
+      <h2>Today&apos;s Progress</h2>
+      <ul>
+        <li><strong id="due-count">0</strong> cards due now</li>
+        <li><strong id="total-count">0</strong> total cards</li>
+      </ul>
+      <button id="start-btn">Start Studying</button>
+    </section>
+
+    <section>
+      <h2>Why Local-First?</h2>
+      <p>Your tone drills, streaks, and personal notes never leave your device. Export/import JSON backups whenever you like.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Mandarin Flashcards • Offline-first PWA</small>
+  </footer>
+
+<script type="module" src="./app.js"></script>
+
+</body>
+</html>
