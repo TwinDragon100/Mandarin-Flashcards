@@ -1,9 +1,17 @@
 #!/bin/bash
-set -e
-
-cd "$(dirname "$0")"
+set -euo pipefail
 
 echo "Publishing site to docs..."
+
+if [ "$(git rev-parse --abbrev-ref HEAD)" != "main" ]; then
+  echo "ERROR: Not on branch 'main'."
+  exit 1
+fi
+
+if ! git diff --quiet -- app; then
+  echo "ERROR: app/ has uncommitted changes. Commit first."
+  exit 1
+fi
 
 tools/oc_validate.sh
 
