@@ -128,4 +128,72 @@ print("OK")
 PY
 echo
 
+echo "4) Service worker core assets existence check"
+python3 - <<'PY'
+import re, sys, pathlib
+
+repo = pathlib.Path.cwd()
+app = repo / "app"
+sw = app / "service-worker.js"
+
+if not sw.exists():
+    print("MISSING: app/service-worker.js")
+    sys.exit(4)
+
+txt = sw.read_text(encoding="utf-8", errors="ignore")
+
+m_ver = re.search(r"\bconst\s+SW_VERSION\s*=\s*['\"]([^'\"]+)['\"]\s*;", txt)
+if not m_ver or not m_ver.group(1).strip():
+    print("MISSING/EMPTY: SW_VERSION in service-worker.js")
+    sys.exit(4)
+
+m_assets = re.search(r"\bconst\s+CORE_ASSETS\s*=\s*\[(.*?)\]\s*;", txt, flags=re.S)
+if not m_assets:
+    print("MISSING: CORE_ASSETS array in service-worker.js")
+    sys.exit(4)
+
+body = m_assets.group(1)
+assets = re.findall(r"['\"]([^'\"]+)['\"]", body)
+
+if not assets:
+    print("EMPTY: CORE_ASSETS array")
+    sys.exit(4)
+
+bad = []
+missing = []
+
+for a in assets:
+    a = a.strip()
+    if not a:
+        continue
+
+    if re.match(r"^[a-zA-Z]+://", a):
+        bad.append(("remote-url", a))
+        continue
+
+    if a == "./":
+        path = app / "index.html"
+    else:
+        rel = a[2:] if a.startswith("./") else a
+        path = app / rel
+
+    if not path.exists():
+        missing.append(str(path))
+
+if bad:
+    print("BAD CORE_ASSETS ENTRIES:")
+    for kind, a in bad:
+        print(f" - {kind}: {a}")
+    sys.exit(4)
+
+if missing:
+    print("MISSING CORE_ASSETS FILES:")
+    for p in missing:
+        print(" -", p)
+    sys.exit(4)
+
+print("OK")
+PY
+echo
+
 echo "Validation complete."
