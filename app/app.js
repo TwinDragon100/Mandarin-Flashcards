@@ -1,3 +1,5 @@
+/* OC_BEGIN:appjs:top:v1 */
+
 function qs(sel) {
   return document.querySelector(sel);
 }
@@ -769,3 +771,5 @@ window.addEventListener('DOMContentLoaded', () => {
     setStatus('Error: ' + e.message);
   });
 });
+
+/* OC_END:appjs:top:v1 */

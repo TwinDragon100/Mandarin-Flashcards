@@ -1,3 +1,4 @@
+/* OC_BEGIN:service-worker:v1 */
 const SW_VERSION = 'v3';
 const CACHE_PREFIX = 'mandarin-flashcards';
 const CACHE_NAME = `${CACHE_PREFIX}-${SW_VERSION}`;
@@ -75,7 +76,9 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
           return res;
         })
-        .catch(() => cached);
+       .catch(() => new Response('Offline', { status: 503, statusText: 'Offline' }));
     })
   );
 });
+
+/* OC_END:service-worker:v1 */
