@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+cd "$(dirname "$0")"
+
 echo "Publishing site to docs..."
 
 tools/oc_validate.sh
