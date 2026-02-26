@@ -60,66 +60,48 @@ echo
 
 echo "0b) Fence isolation check (no content outside fences)"
 python3 - "$APP_DIR" <<'PY'
-import sys, pathlib, re
+import re, sys, pathlib
 
 app = pathlib.Path(sys.argv[1]).resolve()
 
-begin_re = re.compile(r'OC_BEGIN:')
-end_re   = re.compile(r'OC_END:')
+begin_re = re.compile(r'/\*\s*OC_BEGIN:')
+end_re   = re.compile(r'/\*\s*OC_END:')
 
 bad = []
 
-def only_ws(s: str) -> bool:
-    return s.strip() == ""
-
-for f in sorted(app.rglob("*")):
-    if not f.is_file():
-        continue
-    if f.suffix not in (".js", ".html", ".css"):
-        continue
-
+for f in app.rglob("*.js"):
     text = f.read_text(encoding="utf-8", errors="ignore")
-    lines = text.splitlines(True)
+    lines = text.splitlines()
 
-    has_begin = any(begin_re.search(ln) for ln in lines)
-    has_end   = any(end_re.search(ln) for ln in lines)
-    if not (has_begin or has_end):
+    begin_lines = [i for i, ln in enumerate(lines, start=1) if begin_re.search(ln)]
+    end_lines   = [i for i, ln in enumerate(lines, start=1) if end_re.search(ln)]
+
+    if not begin_lines and not end_lines:
         continue
 
-    # Must have both
-    if not (has_begin and has_end):
-        bad.append((str(f), "has OC_BEGIN/OC_END mismatch"))
+    if len(begin_lines) != 1 or len(end_lines) != 1:
+        bad.append((str(f), f"must contain exactly 1 OC_BEGIN and 1 OC_END (found {len(begin_lines)} begin, {len(end_lines)} end)"))
         continue
 
-    # Scan: any non-whitespace outside any fenced region is forbidden
-    in_fence = False
+    begin_idx = begin_lines[0]
+    end_idx = end_lines[0]
+
+    if begin_idx >= end_idx:
+        bad.append((str(f), "OC_BEGIN must appear before OC_END"))
+        continue
+
+    # Check no content before begin or after end (except blank lines)
     for i, ln in enumerate(lines, start=1):
-        if begin_re.search(ln):
-            in_fence = True
-            continue
-        if end_re.search(ln):
-            in_fence = False
-            continue
-
-        if not in_fence and not only_ws(ln):
-            bad.append((str(f), f"non-whitespace outside fences at line {i}"))
-            break
-
-    # Additionally: first/last non-whitespace should be fence markers
-    non_ws = [(i+1, ln) for i, ln in enumerate(lines) if not only_ws(ln)]
-    if non_ws:
-        first_i, first_ln = non_ws[0]
-        last_i, last_ln   = non_ws[-1]
-        if not begin_re.search(first_ln):
-            bad.append((str(f), f"first non-whitespace is not OC_BEGIN (line {first_i})"))
-        if not end_re.search(last_ln):
-            bad.append((str(f), f"last non-whitespace is not OC_END (line {last_i})"))
+        if i < begin_idx or i > end_idx:
+            if ln.strip() != "":
+                bad.append((str(f), f"content outside fence at line {i}"))
+                break
 
 if bad:
-    print("FENCE ISOLATION FAILURES:")
-    for path, msg in bad:
-        print(f" - {path}: {msg}")
-    sys.exit(10)
+    print("FENCE ISOLATION VIOLATIONS:")
+    for file, msg in bad:
+        print(f" - {file}: {msg}")
+    sys.exit(2)
 
 print("OK")
 PY
