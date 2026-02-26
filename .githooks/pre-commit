@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ -x tools/oc_validate.sh ]; then
+  tools/oc_validate.sh
+else
+  echo "Missing tools/oc_validate.sh"
+  exit 1
+fi
