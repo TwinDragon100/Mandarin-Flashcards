@@ -3,6 +3,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 APP_DIR="$ROOT/app"
+cd "$ROOT"
 
 echo "OpenClaw Validation Runner"
 echo "Root: $ROOT"
