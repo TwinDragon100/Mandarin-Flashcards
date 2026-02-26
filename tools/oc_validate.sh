@@ -179,11 +179,10 @@ PY
 echo
 
 echo "4) Service worker core assets existence check"
-python3 - <<'PY'
+python3 - "$APP_DIR" <<'PY'
 import re, sys, pathlib
 
-repo = pathlib.Path.cwd()
-app = repo / "app"
+app = pathlib.Path(sys.argv[1]).resolve()
 sw = app / "service-worker.js"
 
 if not sw.exists():
